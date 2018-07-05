@@ -1,4 +1,4 @@
-httpu packages
+# httpu packages
 
 This is where I'll be storing packages to work with the httpu client. To get the
 latest packages, using the client you may run:
