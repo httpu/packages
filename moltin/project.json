@@ -1,0 +1,11 @@
+{
+  "project": {
+    "url": "https://api.moltin.com",
+    "resourceFiles": [
+      "moltin/requests/auth.json",
+      "moltin/requests/products.json",
+      "moltin/requests/brands.json",
+      "moltin/requests/carts.json"
+    ]
+  }
+}

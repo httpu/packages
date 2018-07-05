@@ -1,0 +1,16 @@
+{
+  "kind": "request",
+  "name": "ip",
+  "spec": {
+    "uri": "/ip",
+    "method": "GET",
+    "stashValues": [
+      {
+        "name": "ip",
+        "jsonPath": [
+          "origin"
+        ]
+      }
+    ]
+  }
+}

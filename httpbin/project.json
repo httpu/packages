@@ -1,0 +1,13 @@
+{
+  "project": {
+    "url": "https://nghttp2.org/httpbin",
+    "resourceFiles": [
+      "httpbin/requests/ip.json",
+      "httpbin/requests/user-agent.json",
+      "httpbin/requests/headers.json",
+      "httpbin/requests/get.json",
+      "httpbin/requests/post.json",
+      "httpbin/requests/status.json"
+    ]
+  }
+}

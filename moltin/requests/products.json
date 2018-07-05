@@ -1,0 +1,53 @@
+{
+  "kind": "request",
+  "name": "products",
+  "spec": {
+    "uri": "/v2/products",
+    "method": "GET",
+    "headers": [
+      {
+        "header": "Authorization",
+        "value": "Bearer ${stash[access_token]}"
+      },
+      {
+        "header": "content-type",
+        "value": "application/json"
+      }
+    ],
+    "variants": [
+      {
+        "name": "get",
+        "method": "GET"
+      },
+      {
+        "name": "create",
+        "method": "POST",
+        "data": {
+          "fromFile": "moltin/requests/data/products.create.json"
+        },
+        "stashValues": [
+          {
+            "name": "product_id",
+            "jsonPath": [
+              "data",
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "update",
+        "method": "PUT",
+        "path": "/${stash[product_id]}",
+        "data": {
+          "fromFile": "moltin/requests/data/products.update.json"
+        }
+      },
+      {
+        "name": "delete",
+        "method": "DELETE",
+        "path": "/${stash[product_id]}"
+      }
+    ]
+  }
+}

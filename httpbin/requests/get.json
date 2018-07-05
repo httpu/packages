@@ -1,0 +1,8 @@
+{
+	"kind": "request",
+	"name": "get",
+	"spec": {
+		"uri": "/get?name=${env[NAME]}&ip=${stash[ip]}",
+		"method": "GET"
+	}
+}

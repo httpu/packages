@@ -1,0 +1,22 @@
+Welcome to the Moltin API
+
+To see this message again, enter command mode (up arrow key) and type in 'welcome', then enter.
+
+To get started, head over to https://moltin.com to get your API credentials. Once you have those, you're ready to start exploring the API using httpu.
+
+Once you have your client_id and client_secret, load them into your environment as `client_id` and `client_secret`, then you're all set!
+
+Tutorial:
+Start off by running:
+	auth.client_credentials
+
+Your access token will now be available in your stash. You can view all values in your stash by entering command mode, and typing stash.
+
+Create a new product:
+	products.create
+
+Update that product's name:
+	products.update
+
+Delete the product:
+	products.delete

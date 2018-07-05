@@ -1,0 +1,7 @@
+{
+  "data": {
+    "id": "${stash[product_id]}",
+    "type": "cart_item",
+    "quantity": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "request",
+  "name": "carts",
+  "spec": {
+    "uri": "/v2/carts/my-cart",
+    "method": "GET",
+    "headers": [
+      {
+        "header": "Authorization",
+        "value": "Bearer ${stash[access_token]}"
+      },
+      {
+        "header": "content-type",
+        "value": "application/json"
+      }
+    ],
+    "variants": [
+      {
+        "name": "get",
+        "method": "GET"
+      },
+      {
+        "name": "add-product",
+        "method": "POST",
+        "path": "/items",
+        "data": {
+          "fromFile": "moltin/requests/data/carts.add-product.json"
+        }
+      },
+      {
+        "name": "delete",
+        "method": "DELETE"
+      }
+    ]
+  }
+}

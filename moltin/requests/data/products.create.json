@@ -1,0 +1,19 @@
+{
+  "data": {
+    "commodity_type": "physical",
+    "description": "My new product!",
+    "manage_stock": false,
+    "name": "My new product",
+    "price": [
+      {
+        "amount": 2000,
+        "currency": "USD",
+        "includes_tax": true
+      }
+    ],
+    "sku": "123",
+    "slug": "my-new-product",
+    "status": "live",
+    "type": "product"
+  }
+}

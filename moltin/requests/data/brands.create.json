@@ -1,0 +1,9 @@
+{
+  "data": {
+    "type": "brand",
+    "name": "My new brand!",
+    "slug": "my-new-brand",
+    "description": "The brand of all brands.",
+    "status": "live"
+  }
+}

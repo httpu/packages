@@ -1,0 +1,22 @@
+{
+	"kind": "request",
+	"name": "headers",
+	"spec": {
+		"uri": "/headers",
+		"method": "GET",
+		"headers": [
+			{
+				"header": "client",
+				"value": "httpu"
+			}
+		],
+		"stashValues": [
+			{
+				"name": "headers",
+				"jsonPath": [
+					"Client"
+				]
+			}
+		]
+	}
+}

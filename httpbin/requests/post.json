@@ -1,0 +1,14 @@
+{
+  "kind": "request",
+  "name": "post",
+  "spec": {
+    "uri": "/post?client=httpu",
+    "method": "POST",
+    "formData": [
+      {
+        "name": "name",
+        "value": "Harry"
+      }
+    ]
+  }
+}

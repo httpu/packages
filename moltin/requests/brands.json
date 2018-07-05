@@ -1,0 +1,53 @@
+{
+  "kind": "request",
+  "name": "brands",
+  "spec": {
+    "uri": "/v2/brands",
+    "method": "GET",
+    "headers": [
+      {
+        "header": "Authorization",
+        "value": "Bearer ${stash[access_token]}"
+      },
+      {
+        "header": "content-type",
+        "value": "application/json"
+      }
+    ],
+    "variants": [
+      {
+        "name": "get",
+        "method": "GET"
+      },
+      {
+        "name": "create",
+        "method": "POST",
+        "data": {
+          "fromFile": "moltin/requests/data/brands.create.json"
+        },
+        "stashValues": [
+          {
+            "name": "brand_id",
+            "jsonPath": [
+              "data",
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "update",
+        "method": "PUT",
+        "path": "/${stash[brand_id]}",
+        "data": {
+          "fromFile": "moltin/requests/data/brands.update.json"
+        }
+      },
+      {
+        "name": "delete",
+        "method": "DELETE",
+        "path": "/${stash[brand_id]}"
+      }
+    ]
+  }
+}

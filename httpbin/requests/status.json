@@ -1,0 +1,24 @@
+{
+  "kind": "request",
+  "name": "status",
+  "spec": {
+    "uri": "/status",
+    "variants": [
+      {
+        "name": "200",
+        "method": "GET",
+        "path": "/200"
+      },
+      {
+        "name": "400",
+        "method": "GET",
+        "path": "/400"
+      },
+      {
+        "name": "500",
+        "method": "GET",
+        "path": "/500"
+      }
+    ]
+  }
+}

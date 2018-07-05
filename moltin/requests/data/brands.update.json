@@ -1,0 +1,10 @@
+{
+  "data": {
+    "type": "brand",
+    "id": "${stash[brand_id]}",
+    "name": "My updated brand!",
+    "slug": "my-updated-brand",
+    "description": "The brand of all updated brands.",
+    "status": "live"
+  }
+}
